@@ -1,0 +1,19 @@
+.score-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.score-section label {
+    color: #717171;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.score-section p {
+    color: #717171;
+    font-size: 32px;
+}

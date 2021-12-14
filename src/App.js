@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import GameHandler from './components/game-handler';
+import './App.css'
 
 export default function App() {
   const [username, setUsername] = useState("");
@@ -7,6 +8,13 @@ export default function App() {
 
   const handleStart = () => {
     setIsStart(true);
+  }
+
+  const handleOnKeyDown = e => {
+    if (e.keyCode === 13) {
+      e.preventDefault();
+      handleStart();
+    }
   }
   
   return (
@@ -16,13 +24,17 @@ export default function App() {
         : 
         <>
           <div>
-            <h3>English Game</h3>
-            <input
-              type="text" 
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
-            <button onClick={() => handleStart()}>Start</button>
+            <h1>Welcome to English-Easy</h1>
+            <div className='app-body'>
+              <label>Enter your nickname:</label>
+              <input
+                type="text" 
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                onKeyDown={(e) => handleOnKeyDown(e)}
+              />
+              <button onClick={() => handleStart()}>Start</button>
+            </div>
           </div>
         </>
       }

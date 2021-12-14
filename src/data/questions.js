@@ -1,38 +1,47 @@
 export const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: 'Who ___ you?',
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: 'is', isCorrect: false },
+				{ answerText: 'have', isCorrect: false },
+				{ answerText: 'are', isCorrect: true },
+				{ answerText: 'from', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: 'I came ______ England.',
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
+				{ answerText: 'to', isCorrect: false },
+				{ answerText: 'from', isCorrect: true },
+				{ answerText: 'at', isCorrect: false },
+				{ answerText: 'in', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: 'Where __ you work?',
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
+				{ answerText: 'are', isCorrect: false },
+				{ answerText: 'does', isCorrect: false },
+				{ answerText: 'si', isCorrect: false },
+				{ answerText: 'do', isCorrect: true },
 			],
 		},
 		{
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'I __ care',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'not', isCorrect: false },
+				{ answerText: 'doesn\'t', isCorrect: false },
+				{ answerText: 'no', isCorrect: false },
+				{ answerText: 'don\'t', isCorrect: true },
+			],
+		},
+		{
+			questionText: 'Excuse me, do __  know what time it is?',
+			answerOptions: [
+				{ answerText: 'she', isCorrect: false },
+				{ answerText: 'I', isCorrect: false },
+				{ answerText: 'you', isCorrect: true },
+				{ answerText: 'it', isCorrect: false },
 			],
 		},
 	];
